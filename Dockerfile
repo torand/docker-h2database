@@ -1,9 +1,10 @@
 FROM java:7
 
+ENV RELEASE_VERSION 2.1.214
 ENV RELEASE_DATE 2022-06-13
 ENV H2DATA /h2-data
 
-RUN curl http://www.h2database.com/h2-$RELEASE_DATE.zip -o h2.zip \
+RUN curl https://github.com/h2database/h2database/releases/download/version-$RELEASE_VERSION/h2-$RELEASE_DATE.zip -L -o h2.zip \
     && unzip h2.zip -d . \
     && rm h2.zip
 
