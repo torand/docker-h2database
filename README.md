@@ -11,7 +11,7 @@ Currently only the latest stable image is built, which according to
 ## How to use this image
 
 ```sh
-docker run --name my-h2 -d buildo/h2database
+docker run --name my-h2 -d torandh/h2database
 ```
 
 The default TCP port 9092 is exposed, so standard container linking will make it
@@ -28,7 +28,7 @@ jdbc:h2:tcp://my-h2/my-db-name
 If you want to connect to the H2 web interface, bind the port 8082:
 
 ```sh
-docker run --name my-h2 -p 8082:8082 -d buildo/h2database
+docker run --name my-h2 -p 8082:8082 -d torandh/h2database
 ```
 
 Then in your browser open http://localhost:8082/ and use the following
