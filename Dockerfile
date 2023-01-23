@@ -1,8 +1,10 @@
-FROM java:7
+FROM sgrio/java:jdk_8_alpine
 
 ENV RELEASE_VERSION 2.1.214
 ENV RELEASE_DATE 2022-06-13
 ENV H2DATA /h2-data
+
+RUN apk update && apk add bash
 
 RUN curl https://github.com/h2database/h2database/releases/download/version-$RELEASE_VERSION/h2-$RELEASE_DATE.zip -L -o h2.zip \
     && unzip h2.zip -d . \
