@@ -6,7 +6,7 @@ A Docker image for the [H2 Database Engine](http://www.h2database.com/).
 
 Currently only the latest stable image is built, which according to
 [this page](http://www.h2database.com/html/download.html) is
-**Version 2.1.214 (2022-06-13)**.
+**Version 2.3.232 (2024-08-11)**.
 
 ## How to use this image
 
