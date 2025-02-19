@@ -1,4 +1,4 @@
-FROM sgrio/java:jdk_8_alpine
+FROM sgrio/java:jdk_11_alpine
 
 ENV RELEASE_VERSION 2.3.232
 ENV RELEASE_DATE 2024-08-11
